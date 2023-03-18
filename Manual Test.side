@@ -1,0 +1,78 @@
+{
+  "id": "328155e2-8221-40b6-9bba-86909c4a5504",
+  "version": "2.0",
+  "name": "Manual Test",
+  "url": "https://www.google.com/",
+  "tests": [{
+    "id": "a1b4ebe6-33d1-4d3c-85d7-8627ba780dac",
+    "name": "Search Test",
+    "commands": [{
+      "id": "8be6b913-8388-4678-b759-f3202e227799",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7041759d-0e96-4579-ba0b-486d751c752f",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7c1e242-b8c0-434f-9d94-8ce7e8fa6f2b",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "coding images 4k wallpaper"
+    }, {
+      "id": "7585e673-0388-4080-ac4a-c4a5724ffb2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=center:nth-child(1) > .gNO89b",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//div[4]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e03ff51b-b77f-4b66-9533-c62691a684de",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Images",
+      "targets": [
+        ["linkText=Images", "linkText"],
+        ["css=.hdtb-mitem:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Images')]", "xpath:link"],
+        ["xpath=//div[@id='hdtb-msb']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search?q=coding+images+4k+wallpaper&sxsrf=AJOqlzV9B8YzuN8lEqMwY5Zvc7qy6ZpwhA:1679123196572&source=lnms&tbm=isch&sa=X&ved=2ahUKEwijmqmt9eT9AhWQRmwGHafZBIIQ_AUoAXoECAEQAw')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Images')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e6d81845-5dd1-401f-8c30-41745f411299",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a1b4ebe6-33d1-4d3c-85d7-8627ba780dac"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
