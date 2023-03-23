@@ -1,0 +1,219 @@
+{
+  "id": "582a677c-41eb-4121-bb8a-aabf249b2252",
+  "version": "2.0",
+  "name": "IRC_Testing_D3_SeleniumIDE_PAH_COD",
+  "url": "https://www.demoblaze.com/",
+  "tests": [{
+    "id": "107693a5-13cf-4179-94e9-393c424e0408",
+    "name": "Task_01",
+    "commands": [{
+      "id": "c14590c3-cfda-40d3-93a0-547f48a10f40",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af84a975-5d23-4e7f-9a8c-afa1af5cf894",
+      "comment": "",
+      "command": "clickAt",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//div[@id='navbarExample']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5167293a-2725-440f-8894-68b18694dbfd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#exampleModal span",
+      "targets": [
+        ["css=#exampleModal span", "css:finder"],
+        ["xpath=//div[@id='exampleModal']/div/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "81169661-171c-4d1a-935c-914f163db447",
+    "name": "Task_02",
+    "commands": [{
+      "id": "ca3213fd-ae77-4f4f-9e8d-5c33bfa4af63",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24b27f22-199b-4731-b068-86aed1003bf7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x846",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e2164c1-807d-48e6-97ab-ab127d6331cb",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='tbodyid']/div/div/div/h5",
+      "targets": [],
+      "value": "cost"
+    }, {
+      "id": "662c9ae7-8da1-4f97-9b80-281595da86e6",
+      "comment": "",
+      "command": "verify",
+      "target": "cost",
+      "targets": [],
+      "value": "$360"
+    }]
+  }, {
+    "id": "da0444e3-149f-4138-8314-4fb7b6c88947",
+    "name": "Task_03",
+    "commands": [{
+      "id": "d1de25a6-2e05-4599-8fa7-ca810eae59e9",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06538aab-a30c-44d4-9bba-fed29e0978b7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1051x846",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc3126b4-6591-4c73-a159-3e747b9a6ec0",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-lg-4:nth-child(1) #article",
+      "targets": [],
+      "value": "description"
+    }, {
+      "id": "99c7b360-f164-45df-98fe-3f4a94f85c18",
+      "comment": "",
+      "command": "echo",
+      "target": "${description}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d4ece5dd-fa6f-4e83-a128-70fb2e6c9e40",
+    "name": "Test_04",
+    "commands": [{
+      "id": "0949cacc-ceb3-4b98-b068-7975b396a25e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "274d9d1c-e751-427c-b751-c2cefb10f428",
+      "comment": "",
+      "command": "executeScript",
+      "target": "const cart = document.getElementById('cartur'); cart.click()",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fe3c0c98-31ef-4a20-a128-49393d905456",
+    "name": "Task_05",
+    "commands": [{
+      "id": "fbe6a78e-08f5-4592-89ed-0a23664e3cb2",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4bd8c2c-9cb7-4ed4-8d20-600df643e76f",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.col-lg-4:nth-child(1) h5",
+      "targets": [],
+      "value": "homePagePrice"
+    }, {
+      "id": "8ed91377-8b09-42bb-a347-5f5ea60b34e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=article",
+      "targets": [],
+      "value": "homePageDes"
+    }, {
+      "id": "ddadc678-729d-485f-adb3-0a842c7b1bb6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-4:nth-child(1) .card-img-top",
+      "targets": [
+        ["css=.col-lg-4:nth-child(1) .card-img-top", "css:finder"],
+        ["xpath=//div[@id='tbodyid']/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "502f5e29-cc54-4bf4-94c8-931ab13c6b94",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='tbodyid']/h3",
+      "targets": [],
+      "value": "productPagePrice"
+    }, {
+      "id": "3797cef9-02e3-40d7-aa15-89c2e51787b5",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='more-information']/p",
+      "targets": [],
+      "value": "productPageDes"
+    }, {
+      "id": "9ea7ab41-c75d-416b-bfcd-f05c78b3cfe0",
+      "comment": "",
+      "command": "//verify",
+      "target": "homePagePrice",
+      "targets": [],
+      "value": "${productPagePrice}"
+    }]
+  }, {
+    "id": "ae6f846a-167f-4708-9b17-762202c1262b",
+    "name": "Task_06",
+    "commands": [{
+      "id": "9535de55-d627-4a6b-9363-5433c58b291b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.demoblaze.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9be1bf7b-6197-49fc-8fe0-532e9f70105d",
+      "comment": "",
+      "command": "click",
+      "target": "id=cartur",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eed78d2d-5fa0-4bfc-908a-2868b0c05f04",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=(//button[@type='button'])[30]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "db6711ec-a624-46a0-8ffc-1805954ef14c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.demoblaze.com/"],
+  "plugins": []
+}

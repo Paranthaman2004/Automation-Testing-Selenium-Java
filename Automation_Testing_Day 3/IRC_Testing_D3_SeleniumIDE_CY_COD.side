@@ -1,0 +1,119 @@
+{
+  "id": "1853422d-dc28-4873-993e-38139c1030bd",
+  "version": "2.0",
+  "name": "DAY3_AUTOMATION_SELENIUM_IDE_CL",
+  "url": "https://www.amazon.in/",
+  "tests": [{
+    "id": "bbcf4b6f-4a34-4896-aee7-a6a2bbae9a81",
+    "name": "CHALLENGE_LAB_TASK1_AMAZON",
+    "commands": [{
+      "id": "59210248-abb6-4ae7-ad8d-c146bfa35026",
+      "comment": "Open the URL",
+      "command": "open",
+      "target": "https://www.amazon.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1b0b29b-1fc6-4ed3-a372-cb2563052b7e",
+      "comment": "verify user has signin option",
+      "command": "verifyElementPresent",
+      "target": "xpath=//span[contains(.,'Sign in')]",
+      "targets": [
+        ["css=#nav-flyout-ya-signin .nav-action-inner", "css:finder"],
+        ["xpath=//div[@id='nav-flyout-ya-signin']/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b2dc3d3-e22d-4321-a36b-29088a6943c8",
+      "comment": "Check title",
+      "command": "assertTitle",
+      "target": "Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf89a329-6ee3-47af-b366-345d70cfc472",
+      "comment": "Click on Mobiles",
+      "command": "click",
+      "target": "linkText=Mobiles",
+      "targets": [
+        ["linkText=Mobiles", "linkText"],
+        ["css=.nav-a:nth-child(5)", "css:finder"],
+        ["xpath=//a[contains(text(),'Mobiles')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a[4]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles')]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/div/div/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Mobiles')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dedeec1-a53d-45ae-a59f-75ccf65b8d3f",
+      "comment": "Check Accessories",
+      "command": "assertElementPresent",
+      "target": "linkText=Accessories",
+      "targets": [
+        ["linkText=Accessories", "linkText"],
+        ["css=.a-tab-heading:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Accessories')])[5]", "xpath:link"],
+        ["xpath=//div[@id='a-page']/div[2]/div[2]/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/b?node=1389402031')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96e34f15-4772-41ce-a2d2-dd4a069b8530",
+      "comment": "store url",
+      "command": "store",
+      "target": "https://www.amazon.in/mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "e642c978-ab16-460d-aae9-b31fbf0c6819",
+      "comment": "get url",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "60f99677-4427-4de3-9400-71bb027e80b5",
+      "comment": "verify url",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "${url}"
+    }, {
+      "id": "04d5b88b-bfd1-4fe4-abeb-a633485e6381",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,7516.49169921875)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a56141de-b819-49d4-ac34-a8de03488b27",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Returns Centre",
+      "targets": [
+        ["linkText=Returns Centre", "linkText"],
+        ["css=.navFooterLinkCol:nth-child(7) li:nth-child(3) > .nav_a", "css:finder"],
+        ["xpath=//a[contains(text(),'Returns Centre')]", "xpath:link"],
+        ["xpath=//div[@id='navFooter']/div/div/div[7]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/gp/css/returns/homepage.html?ref_=footer_hy_f_4')]", "xpath:href"],
+        ["xpath=//div[7]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Returns Centre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "39ab0af4-d2f4-456b-bbe9-3db1e8d28844",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.amazon.in/"],
+  "plugins": []
+}

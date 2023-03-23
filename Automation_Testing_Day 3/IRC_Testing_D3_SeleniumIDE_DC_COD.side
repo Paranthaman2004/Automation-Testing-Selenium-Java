@@ -1,0 +1,147 @@
+{
+  "id": "3e35b719-1f49-4b6c-8915-4b516a0538d7",
+  "version": "2.0",
+  "name": "DAY3_AUTOMATION_SELENIUMIDE_DAILYCHALLENGE",
+  "url": "https://www.firstcry.com/",
+  "tests": [{
+    "id": "d7491d7f-038e-408f-8090-bfa63315ccbe",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "1accadda-3d2e-4df0-a37d-beed4d8e2b5c",
+    "name": "DAY3_DAILY_CHALLENGE_TASK",
+    "commands": [{
+      "id": "76fdca9e-cab0-4a8e-a911-a69484dfb0fb",
+      "comment": "Open the URL",
+      "command": "open",
+      "target": "https://www.firstcry.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e56844e-f172-4f49-a434-fbc3bbdfaf83",
+      "comment": "Maxmize page",
+      "command": "setWindowSize",
+      "target": "1348x748",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1778467a-046f-4dd3-b6ca-b682c5bd5db6",
+      "comment": "Verify Premium Boutiques",
+      "command": "verifyElementPresent",
+      "target": "xpath=//span[contains(.,'PREMIUM BOUTIQUES')]",
+      "targets": [
+        ["css=.baby", "css:finder"],
+        ["xpath=//div[@id='new-boutique']/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[8]/div/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'PREMIUM BOUTIQUES')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "987a46be-04e0-4216-9ddb-1736ef95e1ee",
+      "comment": "Verify title",
+      "command": "assertTitle",
+      "target": "Baby Products Online India: Newborn Baby Products & Kids Online Shopping at FirstCry.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6726fa7-8d3f-489d-a7a0-993efa2719c5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=BOY FASHION",
+      "targets": [
+        ["linkText=BOY FASHION", "linkText"],
+        ["css=.M14_42:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'BOY FASHION')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '//www.firstcry.com/boys-clothes?ref2=menu_dd_catlanding')]", "xpath:href"],
+        ["xpath=//div[8]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BOY FASHION')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "331e4140-73e7-4bc9-a633-e7814b982a1d",
+      "comment": "Store URL",
+      "command": "store",
+      "target": "https://www.firstcry.com/boys-clothes?ref2=menu_dd_catlanding",
+      "targets": [],
+      "value": "url"
+    }, {
+      "id": "16cbea4b-85e0-4b59-8bb5-9556d6459be6",
+      "comment": "Geturl",
+      "command": "executeScript",
+      "target": "return window.location.href",
+      "targets": [],
+      "value": "pageurl"
+    }, {
+      "id": "468c4e17-8958-4a33-a518-1d182c97e331",
+      "comment": "Check url",
+      "command": "verify",
+      "target": "pageurl",
+      "targets": [],
+      "value": "${url}"
+    }, {
+      "id": "58dc02a4-bb39-4c59-9b7b-18b2790824ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.swiper-slide:nth-child(5) .swiper-lazy",
+      "targets": [
+        ["css=.swiper-slide:nth-child(5) .swiper-lazy", "css:finder"],
+        ["xpath=//img[@alt='Carters']", "xpath:img"],
+        ["xpath=//div[@id='cpidParent']/div[3]/div/div/div/div/div/div[5]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[5]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffdc67ba-435c-447a-8452-64826181bd85",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,8381.7548828125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9cd13b3-689a-4e66-a562-0537ccfa8f1d",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,15487.017578125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "060cb141-8b1e-49b2-ac2c-8d7066a4b17b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,23955.087890625)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e00299d8-16b0-4e26-a900-f256233c3309",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,36567.01953125)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc6f7d6f-0816-4dad-bee7-97aa55309a9a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Shipping Policy",
+      "targets": [
+        ["linkText=Shipping Policy", "linkText"],
+        ["css=.lcr-third > .lcr:nth-child(2) > span:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Shipping Policy')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '//www.firstcry.com/shippingpolicy')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Shipping Policy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5b0b06a5-da69-4246-a40d-24c65db58ff1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d7491d7f-038e-408f-8090-bfa63315ccbe"]
+  }],
+  "urls": ["https://www.firstcry.com/"],
+  "plugins": []
+}
