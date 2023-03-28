@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="reg"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.IRC_Testing_D7_TestNG_CE_COD.Test_05">
+        <methods>
+          <include name="testCase_02"/>
+          <include name="testCase_03"/>
+          <include name="testCase_01"/>
+        </methods>
+      </class> <!-- com.IRC_Testing_D7_TestNG_CE_COD.Test_05 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
