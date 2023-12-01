@@ -23,6 +23,7 @@ public class Task_04 {
 	  driver.findElement(By.xpath("//*[@id=\"todaydiv\"]")).click();
 	  driver.findElement(By.xpath("//*[@id=\"seo_search_btn\"]")).click();
 	  driver.findElement(By.xpath("//*[@id=\"1440318358\"]/span")).click();
+	  actions = new Actions(driver);
   }
   @BeforeMethod
   public void beforeMethod() {
